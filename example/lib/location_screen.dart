@@ -52,6 +52,31 @@ class LocationUpdateScreen extends StatelessWidget {
             ],
           ),
           Divider(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(
+                Icons.landscape,
+                size: 75,
+                color: Colors.blueGrey[300],
+              ),
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Altitude',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+                  Text(
+                    state.point.coordinates.alt.toStringAsFixed(5),
+                    style: Theme.of(context).textTheme.headline4,
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ],
+          ),
+          /*
           Container(
             height: 100,
             width: 100,
@@ -63,7 +88,7 @@ class LocationUpdateScreen extends StatelessWidget {
               angle: state.heading ?? 0,
               child: Icon(Icons.navigation, size: 75),
             ),
-          ),
+          ),*/
         ],
       ),
     );

@@ -9,14 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  location: ^3.0.2
+  geolocator: ^6.0.0
   bloc: ^6.0.3
   equatable: ^1.2.5
   firestore_api:
     git:
       url: https://github.com/dartclub/firestore_dart
       path: firestore_api
-  turf: ^0.0.2
+  turf: ^0.0.2+1
 dev_dependencies:
   flutter_test:
     sdk: flutter
